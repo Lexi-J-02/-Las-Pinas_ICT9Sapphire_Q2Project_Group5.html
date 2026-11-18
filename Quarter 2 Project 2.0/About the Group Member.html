@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="About the group, wireframe page for the ICT 9 OBMC project.">
+  <meta name="description" content="About the group, ICT 9 OBMC project.">
   <meta name="color-scheme" content="light">
   <title>OBMC LP</title>
 
@@ -37,8 +37,19 @@
       --bs-tertiary-bg: #eef4f5;
       --bs-border-color: #d9e5e7;
     }
-    body { font-family: "Figtree", system-ui, sans-serif; font-size: 1rem; line-height: 1.65; color: #33474d; }
-    h1, h2, h3, h4, h5, h6 { font-family: "Outfit", sans-serif; color: var(--obmc-deep); line-height: 1.2; }
+
+    body {
+      font-family: "Figtree", system-ui, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #33474d;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Outfit", sans-serif;
+      color: var(--obmc-deep);
+      line-height: 1.2;
+    }
 
     .btn-primary {
       --bs-btn-bg: var(--obmc);
@@ -49,6 +60,7 @@
       --bs-btn-active-border-color: var(--obmc-deep);
       --bs-btn-focus-shadow-rgb: 1, 95, 116;
     }
+
     .btn-outline-primary {
       --bs-btn-color: var(--obmc);
       --bs-btn-border-color: var(--obmc);
@@ -58,8 +70,16 @@
       --bs-btn-active-border-color: var(--obmc);
       --bs-btn-focus-shadow-rgb: 1, 95, 116;
     }
-    .form-control, .form-select { background-color: #fff; }
-    .form-control:focus, .form-select:focus, .form-check-input:focus { border-color: var(--obmc); box-shadow: 0 0 0 .25rem rgba(1, 95, 116, .15); }
+
+    .form-control, .form-select {
+      background-color: #fff;
+    }
+
+    .form-control:focus, .form-select:focus, .form-check-input:focus {
+      border-color: var(--obmc);
+      box-shadow: 0 0 0 .25rem rgba(1, 95, 116, .15);
+    }
+
     .btn-accent {
       --bs-btn-bg: var(--obmc-gold);
       --bs-btn-border-color: var(--obmc-gold);
@@ -72,23 +92,64 @@
       --bs-btn-active-color: var(--obmc-deep);
       --bs-btn-focus-shadow-rgb: 249, 199, 82;
     }
-    .border-accent { border-color: var(--obmc-gold) !important; }
-    .bg-deep { background-color: var(--obmc-deep) !important; }
-    .table thead.bg-deep th { background-color: var(--obmc-deep); color: #fff; }
-    .text-highlight { color: var(--obmc-light) !important; }
+
+    .border-accent {
+      border-color: var(--obmc-gold) !important;
+    }
+
+    .bg-deep {
+      background-color: var(--obmc-deep) !important;
+    }
+
+    .table thead.bg-deep th {
+      background-color: var(--obmc-deep);
+      color: #fff;
+    }
+
+    .text-highlight {
+      color: var(--obmc-light) !important;
+    }
 
     .navbar-obmc {
       padding-top: 0.6rem;
       padding-bottom: 0.6rem;
       border-bottom: 2px solid var(--obmc) !important;
     }
-    .brand-logo { height: 4.75rem; width: auto; }
 
-    .footer-logo { width: 9rem; height: auto; }
-    .ph { display: flex; align-items: center; justify-content: center; background: var(--bs-tertiary-bg); border: 1px dashed rgba(1, 95, 116, .35); color: #52656b; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; }
-    .ph-4x3 { aspect-ratio: 4 / 3; }
-    .ph-16x9 { aspect-ratio: 16 / 9; }
-    .member-ph { width: 96px; height: 96px; }
+    .brand-logo {
+      height: 4.75rem;
+      width: auto;
+    }
+
+    .footer-logo {
+      width: 9rem;
+      height: auto;
+    }
+
+    .ph {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bs-tertiary-bg);
+      border: 1px dashed rgba(1, 95, 116, .35);
+      color: #52656b;
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .ph-4x3 {
+      aspect-ratio: 4 / 3;
+    }
+
+    .ph-16x9 {
+      aspect-ratio: 16 / 9;
+    }
+
+    .member-ph {
+      width: 96px;
+      height: 96px;
+    }
 
     .social-icon {
       display: inline-flex;
@@ -102,6 +163,7 @@
       text-decoration: none;
       transition: background-color 0.2s ease, transform 0.2s ease;
     }
+
     .social-icon:hover,
     .social-icon:focus-visible {
       background-color: var(--obmc-deep);
@@ -116,10 +178,72 @@
       justify-content: center;
       text-align: center;
     }
+
+    /* ADDED: Student Profile Design */
+
+    .team-section {
+      background-color: #eef4f5;
+      padding: 60px 0;
+    }
+
+    .team-title {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .team-description {
+      text-align: center;
+      color: #52656b;
+      margin-bottom: 40px;
+    }
+
+    .team-card {
+      background-color: white;
+      border: 1px solid #d9e5e7;
+      border-radius: 15px;
+      height: 100%;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .team-card img {
+      width: 155px;
+      height: 155px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #dceff2;
+      margin-top: 25px;
+    }
+
+    .team-card .card-body {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .team-card h3 {
+      color: var(--obmc-deep);
+      font-size: 21px;
+      margin-top: 12px;
+    }
+
+    .team-role {
+      color: var(--obmc);
+      font-weight: 600;
+    }
+
+    .team-number {
+      color: var(--obmc);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
   </style>
 </head>
+
 <body>
-  <!--  Navigation  -->
+
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-body sticky-top navbar-obmc" aria-label="Main navigation">
     <div class="container">
       <a class="navbar-brand p-0" href="index.html">
@@ -147,23 +271,201 @@
     </div>
   </nav>
 
+
+  <!-- UPDATED: About the Group Section -->
+
   <main id="main">
-    <!--  Page placeholder  -->
-    <section class="page-placeholder bg-body-tertiary">
+
+    <section class="team-section">
+
       <div class="container">
+
         <p class="small text-uppercase fw-semibold text-body-secondary border-start border-3 border-accent ps-2 mb-3 d-inline-block">
           Page 5
         </p>
-        <h1 class="display-5 fw-semibold mb-3">About the Group</h1>
-        <p class="fs-5 text-body-secondary mb-0">Placeholder body — group details coming soon.</p>
+
+        <h1 class="team-title display-5 fw-semibold">
+          Meet Our Team
+        </h1>
+
+        <p class="team-description fs-5">
+          Get to know the students behind our O.B. Montessori Center
+          website redesign and their contributions.
+        </p>
+
+
+        <!-- Student Cards -->
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Thirdy Sumugat -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card team-card">
+
+              <div class="text-center">
+                <img src="https://cdn.discordapp.com/attachments/1314566851900080239/1572470710620655616/Screenshot_20261118-123539_Photos.png?ex=6afe7cf8&is=6afd2b78&hm=7a270844c005b40a2a7a5e5bdc737b83667e92e6dacb22287d4d1ca6ed6da65a&"
+                     alt="Thirdy Sumugat">
+              </div>
+
+              <div class="card-body">
+
+                <p class="team-number">MEMBER 01</p>
+
+                <h3>Thirdy Sumugat</h3>
+
+                <p class="team-role">Home Page</p>
+
+                <p>
+                  Worked on the Home Page, presenting an introduction
+                  to O.B. Montessori Center.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Sean Ornum -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card team-card">
+
+              <div class="text-center">
+                <img src="https://cdn.discordapp.com/attachments/1314566851900080239/1572470709358436452/Screenshot_20261118-123602_Photos.png?ex=6afe7cf8&is=6afd2b78&hm=574f83504742f80230f1b44424b2873199e697c95aa761383685ebbadef59a8f&"
+                     alt="Sean Ornum">
+              </div>
+
+              <div class="card-body">
+
+                <p class="team-number">MEMBER 02</p>
+
+                <h3>Sean Ornum</h3>
+
+                <p class="team-role">Courses Offer</p>
+
+                <p>
+                  Worked on the Courses Offer page, showcasing
+                  the programs from Casa to Senior High School.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Sam Tapia -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card team-card">
+
+              <div class="text-center">
+                <img src="https://cdn.discordapp.com/attachments/1314566851900080239/1572470710171869246/Screenshot_20261118-123555_Photos.png?ex=6afe7cf8&is=6afd2b78&hm=29dd2d08b94feeed830e8096edae792c4d9f6913412f432b4edc28ee6e0b8429&"
+                     alt="Sam Tapia">
+              </div>
+
+              <div class="card-body">
+
+                <p class="team-number">MEMBER 03</p>
+
+                <h3>Sam Tapia</h3>
+
+                <p class="team-role">Enroll Now</p>
+
+                <p>
+                  Worked on the Enroll Now page, presenting the
+                  enrollment form for prospective students.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Lexi Joaquin -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card team-card">
+
+              <div class="text-center">
+                <img src="https://cdn.discordapp.com/attachments/1314566851900080239/1572470709781930045/Screenshot_20261118-123547_Photos.png?ex=6afe7cf8&is=6afd2b78&hm=f5e5f7d9b641ad353cbc47faca39033a2f86f9c2e824c9e9b8c1cf45c58db480&"
+                     alt="Lexi Joaquin">
+              </div>
+
+              <div class="card-body">
+
+                <p class="team-number">MEMBER 04</p>
+
+                <h3>Lexi Joaquin</h3>
+
+                <p class="team-role">Contact Us</p>
+
+                <p>
+                  Worked on the Contact Us page, including
+                  the school schedule and contact form.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Andrea Lao -->
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card team-card">
+
+              <div class="text-center">
+                <img src="https://cdn.discordapp.com/attachments/1314566851900080239/1572475874916311101/Screenshot_20261118-125729_Photos.png?ex=6afe81c7&is=6afd3047&hm=34c6c5d25aaccfc1d24bd881d16e299d940a3fcb0d66ebb478704c5b92a7a017"
+                     alt="Andrea Lao">
+              </div>
+
+              <div class="card-body">
+
+                <p class="team-number">MEMBER 05</p>
+
+                <h3>Andrea Lao</h3>
+
+                <p class="team-role">About the Group Members</p>
+
+                <p>
+                  Worked on the About the Group page, introducing
+                  the members and presenting their contributions.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- Group Message -->
+
+        <div class="text-center mt-5 p-4 bg-white rounded shadow-sm">
+
+          <h2 class="h3">Working Together</h2>
+
+          <p class="mb-0">
+            Each member contributed to a different part of the website,
+            bringing all the pages together into one group project.
+          </p>
+
+        </div>
+
       </div>
+
     </section>
+
   </main>
 
-  <!--  Footer  -->
+
+  <!-- Footer (ORIGINAL CODE KEPT) -->
+
   <footer class="bg-primary-subtle border-top py-5">
     <div class="container">
       <div class="row g-4">
+
         <div class="col-lg-4">
           <a class="d-inline-block mb-3" href="index.html">
             <img class="footer-logo" src="assets/images/logo/60th_logo.webp"
@@ -208,23 +510,28 @@
           </ul>
 
           <div class="d-flex gap-2">
+
             <a class="social-icon" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                 <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.9h2.54V9.85c0-2.52 1.5-3.91 3.78-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.89h2.78l-.44 2.9h-2.34V22c4.78-.79 8.43-4.94 8.43-9.94z"/>
               </svg>
             </a>
+
             <a class="social-icon" href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                 <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/>
               </svg>
             </a>
+
             <a class="social-icon" href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
                 <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm6.8-11.2a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
               </svg>
             </a>
+
           </div>
         </div>
+
       </div>
 
       <hr class="my-4">
@@ -232,10 +539,13 @@
       <div class="d-flex flex-wrap justify-content-center gap-2 small">
         <p class="mb-0">ICT 9 Project, Second Quarter, AY 2026-2027</p>
       </div>
+
     </div>
   </footer>
 
+
   <!-- Bootstrap 5.3.3 JS bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
